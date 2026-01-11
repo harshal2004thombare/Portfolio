@@ -15,14 +15,14 @@ const Home: React.FC = () => {
         <div className="space-y-10 animate-fadeIn">
           <div>
             <div className="inline-block px-4 py-1.5 rounded-full glass border border-blue-500/30 text-blue-400 text-sm font-semibold mb-8 tracking-wide uppercase">
-              Software Engineer & Java Developer
+              Available for Full-Time Opportunities
             </div>
             <h1 className="text-6xl md:text-8xl font-extrabold leading-tight text-white tracking-tighter">
-              Hello, I'm <br />
+              Hi, I'm <br />
               <span className="gradient-text">{PERSONAL_INFO.name}</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto leading-relaxed font-light">
-              Crafting scalable <span className="text-white font-medium italic">Backend Architectures</span> and seamless <span className="text-white font-medium italic">User Experiences</span> with modern technology.
+              A <span className="text-white font-medium italic">Software Engineer</span> specializing in high-performance Java Backend systems and modern React interfaces.
             </p>
           </div>
 
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
               to="/projects"
               className="px-10 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-500 transition-all flex items-center gap-2 group shadow-2xl shadow-blue-900/40 transform hover:-translate-y-1"
             >
-              Explore Projects
+              View Projects
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               to="/about"
               className="px-10 py-4 glass border border-slate-700 text-white font-bold rounded-2xl hover:bg-slate-800 transition-all transform hover:-translate-y-1"
             >
-              More About Me
+              About Me
             </Link>
           </div>
 
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
             </div>
             <div className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-sm font-mono text-slate-500 uppercase tracking-widest">System Status: Active</span>
+              <span className="text-sm font-mono text-slate-500 uppercase tracking-widest">Available for Hire</span>
             </div>
           </div>
         </div>
