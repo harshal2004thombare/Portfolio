@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Use relative base to ensure it works in subfolders like /Portfolio or at the root
-  base: './', 
+  // Use absolute base for root deployment
+  base: '/', 
   server: {
     port: 3000,
     host: true
