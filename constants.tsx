@@ -1,5 +1,10 @@
 
 import { Project, Experience, Education, Certification } from './types';
+import profileImage from './BACKGROUND.jpg';
+import resume from './HARSHAL_RESUME_FINAL.pdf.pdf';
+import sportsImg from './sports.jpeg';
+import meritImg from './merit.jpeg';
+import dashboardImg from './Screenshot 2026-03-19 172711.png';
 
 export const PERSONAL_INFO = {
   name: "Harshal Thombare",
@@ -10,8 +15,8 @@ export const PERSONAL_INFO = {
   linkedin: "linkedin.com/in/harshal-thombare",
   github: "github.com/harshal2004thombare",
   summary: "Entry-level Software Engineer with hands-on experience in Java, Spring Boot, React, and MySQL. Passionate about building scalable backends and modern frontends.",
-  profileImage: "/BACKGROUND.jpg",
-  resume: "/HARSHAL_RESUME_FINAL.pdf.pdf"
+  profileImage: profileImage,
+  resume: resume
 };
 
 export const PROJECTS: Project[] = [
@@ -61,7 +66,7 @@ export const PROJECTS: Project[] = [
       "Deployed on Vercel for real-time access and operational transparency."
     ],
     tech: ["React", "Java", "Spring Boot", "MySQL", "Vercel"],
-    image: "/Screenshot 2026-03-19 172711.png",
+    image: dashboardImg,
     link: "https://frontend-mauve-seven-79.vercel.app/login"
   }
 ];
@@ -147,12 +152,12 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     name: "Sport Scholarship (₹18,600)",
-    image: "/sports.jpeg",
+    image: sportsImg,
     icon: "🏆"
   },
   {
     name: "Merit Scholarship (₹77,500)",
-    image: "/merit.jpeg",
+    image: meritImg,
     icon: "🎓"
   },
   {
