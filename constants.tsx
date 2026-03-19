@@ -1,10 +1,5 @@
 
 import { Project, Experience, Education, Certification } from './types';
-import profileImage from './BACKGROUND.jpg';
-import resume from './HARSHAL_RESUME_FINAL.pdf.pdf';
-import sportsImg from './sports.jpeg';
-import meritImg from './merit.jpeg';
-import dashboardImg from './Screenshot 2026-03-19 172711.png';
 
 export const PERSONAL_INFO = {
   name: "Harshal Thombare",
@@ -15,8 +10,8 @@ export const PERSONAL_INFO = {
   linkedin: "linkedin.com/in/harshal-thombare",
   github: "github.com/harshal2004thombare",
   summary: "Entry-level Software Engineer with hands-on experience in Java, Spring Boot, React, and MySQL. Passionate about building scalable backends and modern frontends.",
-  profileImage: profileImage,
-  resume: resume
+  profileImage: "/profile.jpg",
+  resume: "/resume.pdf"
 };
 
 export const PROJECTS: Project[] = [
@@ -66,7 +61,7 @@ export const PROJECTS: Project[] = [
       "Deployed on Vercel for real-time access and operational transparency."
     ],
     tech: ["React", "Java", "Spring Boot", "MySQL", "Vercel"],
-    image: dashboardImg,
+    image: "/dashboard.png",
     link: "https://frontend-mauve-seven-79.vercel.app/login"
   }
 ];
@@ -99,28 +94,34 @@ export const EDUCATION: Education[] = [
     duration: "March 2022",
     grade: "77.17%",
     location: "Pune, India"
-  },
-  {
-    institution: "Vishwakalyan English Medium School",
-    degree: "CBSE",
-    duration: "June 2020",
-    grade: "71%",
-    location: "Pune, India"
   }
 ];
 
 export const SKILLS = {
-  languages: ["Java", "JavaScript", "Python", "R"],
-  frameworks: ["Spring Boot", "React", "Redux", "Vite"],
-  databases: ["MySQL", "JPA"],
-  tools: ["GitHub", "VS Code", "Tableau", "Arduino IDE"],
-  concepts: ["DSA", "OOPS", "REST APIs", "Microservices"]
+  languages: ["Java", "SQL", "R Language", "C", "C++", "Python"],
+  frameworks: ["Spring Boot", "React", "Node.js", "Express", "Tailwind CSS"],
+  databases: ["MySQL", "PostgreSQL", "MongoDB"],
+  tools: ["Git", "Tableau", "Postman", "IntelliJ IDEA", "VS Code"],
+  concepts: ["REST API", "Data Structures", "Algorithms", "OOPs", "DBMS"]
 };
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    name: "Cisco Network Essentials",
-    link: "https://www.linkedin.com/posts/harshal-thombare_activity-7318329961893789698-hoCm",
+    name: "CyberArt Internship Certificate",
+    link: "https://www.linkedin.com/posts/harshal-thombare_internship-java-springboot-activity-7414719773135085568-Ftfy",
+    icon: "📜"
+  },
+  {
+    name: "Java Programming (LinkedIn)",
+    link: "https://www.linkedin.com/posts/harshal-thombare_java-certificate-activity-7319314658039881728-kR0L",
+    icon: "☕"
+  },
+  {
+    name: "Spring Boot Development",
+    icon: "🍃"
+  },
+  {
+    name: "Full-Stack Web Development",
     icon: "🌐"
   },
   {
@@ -152,12 +153,12 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     name: "Sport Scholarship (₹18,600)",
-    image: sportsImg,
+    image: "/sports.jpeg",
     icon: "🏆"
   },
   {
     name: "Merit Scholarship (₹77,500)",
-    image: meritImg,
+    image: "/merit.jpeg",
     icon: "🎓"
   },
   {
