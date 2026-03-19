@@ -25,6 +25,13 @@ export interface Education {
   location: string;
 }
 
+export interface Certification {
+  name: string;
+  link?: string;
+  icon?: string;
+  image?: string;
+}
+
 export interface Message {
   role: 'user' | 'assistant';
   content: string;

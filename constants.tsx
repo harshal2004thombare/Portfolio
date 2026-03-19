@@ -1,5 +1,5 @@
 
-import { Project, Experience, Education } from './types';
+import { Project, Experience, Education, Certification } from './types';
 
 export const PERSONAL_INFO = {
   name: "Harshal Thombare",
@@ -10,8 +10,8 @@ export const PERSONAL_INFO = {
   linkedin: "linkedin.com/in/harshal-thombare",
   github: "github.com/harshal2004thombare",
   summary: "Entry-level Software Engineer with hands-on experience in Java, Spring Boot, React, and MySQL. Passionate about building scalable backends and modern frontends.",
-  // Explicitly setting to the filename in the root
-  profileImage: "BACKGROUND.jpg" 
+  profileImage: "/BACKGROUND.jpg",
+  resume: "/HARSHAL_RESUME_FINAL.pdf.pdf"
 };
 
 export const PROJECTS: Project[] = [
@@ -49,6 +49,20 @@ export const PROJECTS: Project[] = [
     ],
     tech: ["React", "Vite", "REST API", "MySQL", "Full-stack"],
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?fit=crop&w=800&q=80"
+  },
+  {
+    title: "Rangabhoomi Interiors Management System",
+    role: "Full-Stack Developer",
+    duration: "Jan 2025 – Present",
+    description: [
+      "Developed a comprehensive management system actively used by Rangabhoomi Interiors to streamline daily operations.",
+      "Built a centralized dashboard to monitor project progress, track labour attendance, and manage financial transactions.",
+      "Implemented modules for expense tracking, revenue management, and real-time workforce analytics.",
+      "Deployed on Vercel for real-time access and operational transparency."
+    ],
+    tech: ["React", "Java", "Spring Boot", "MySQL", "Vercel"],
+    image: "/Screenshot 2026-03-19 172711.png",
+    link: "https://frontend-mauve-seven-79.vercel.app/login"
   }
 ];
 
@@ -97,3 +111,53 @@ export const SKILLS = {
   tools: ["GitHub", "VS Code", "Tableau", "Arduino IDE"],
   concepts: ["DSA", "OOPS", "REST APIs", "Microservices"]
 };
+
+export const CERTIFICATIONS: Certification[] = [
+  {
+    name: "Cisco Network Essentials",
+    link: "https://www.linkedin.com/posts/harshal-thombare_activity-7318329961893789698-hoCm",
+    icon: "🌐"
+  },
+  {
+    name: "AI Workshop with MCCIA",
+    link: "https://www.linkedin.com/posts/harshal-thombare_successfully-attended-the-ai-workshop-at-activity-7414719773135085568-Ftfy",
+    icon: "🤖"
+  },
+  {
+    name: "Deloitte Analytics",
+    link: "https://www.linkedin.com/posts/harshal-thombare_forage-certificate-activity-7319314658039881728-kR0L",
+    icon: "📊"
+  },
+  {
+    name: "Tata Forage",
+    link: "https://www.linkedin.com/posts/harshal-thombare_forage-certificate-activity-7322605618815549440-gh9a",
+    icon: "🏗️"
+  },
+  {
+    name: "Cloud Essentials",
+    icon: "☁️"
+  },
+  {
+    name: "Bronze Medal - Gatka",
+    icon: "⚔️"
+  },
+  {
+    name: "Walmart Hackathon",
+    icon: "🚀"
+  },
+  {
+    name: "Sport Scholarship (₹18,600)",
+    image: "/sports.jpeg",
+    icon: "🏆"
+  },
+  {
+    name: "Merit Scholarship (₹77,500)",
+    image: "/merit.jpeg",
+    icon: "🎓"
+  },
+  {
+    name: "Schaeffler Hope of Engineering Scholarship (₹3,00,000)",
+    link: "https://www.buddy4study.com/scholarship/schaeffler-india-hope-engineering-scholarship",
+    icon: "💰"
+  }
+];

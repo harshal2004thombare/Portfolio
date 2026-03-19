@@ -1,13 +1,43 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import AIChatbot from './components/AIChatbot';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Qualification from './pages/Qualification';
 import Contact from './pages/Contact';
+
+const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+const AnimatedRoutes: React.FC = () => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+        <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+        <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
+        <Route path="/qualification" element={<PageWrapper><Qualification /></PageWrapper>} />
+        <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 const App: React.FC = () => {
   return (
@@ -16,16 +46,11 @@ const App: React.FC = () => {
         <Navbar />
         
         <main className="relative z-10">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/qualification" element={<Qualification />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
 
         <AIChatbot />
+        <ScrollToTop />
         
         <footer className="py-12 glass border-t border-slate-800 text-center relative z-10">
           <div className="max-w-7xl mx-auto px-4">
