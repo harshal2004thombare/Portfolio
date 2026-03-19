@@ -157,6 +157,11 @@ export const CERTIFICATIONS: Certification[] = [
     icon: "🚀"
   },
   {
+    name: "SOLID Principles (Scaler)",
+    link: "https://moonshot.scaler.com/s/sl/NHmKz0M8mT",
+    icon: "🧱"
+  },
+  {
     name: "Sport Scholarship (₹18,600)",
     image: sportsImg,
     icon: "🏆"
@@ -168,7 +173,7 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     name: "Schaeffler Hope of Engineering Scholarship (₹3,00,000)",
-    link: "https://www.buddy4study.com/scholarship/schaeffler-india-hope-engineering-scholarship",
+    link: "https://www.buddy4study.com/myprofile/SIHE12/download-certificate?title=U2NoYWVmZmxlciBJbmRpYSBIb3BlIEVuZ2luZWVyaW5nIFNjaG9sYXJzaGlwIDIwMjItMjM=",
     icon: "💰"
   }
 ];
