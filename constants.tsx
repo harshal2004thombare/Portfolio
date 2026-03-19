@@ -157,7 +157,7 @@ export const CERTIFICATIONS: Certification[] = [
     icon: "🧱"
   },
   {
-    name: "Sport Scholarship (₹18,600)",
+    name: "Sport Scholarship (₹1,86,000)",
     image: "/sports.jpeg",
     icon: "🏆"
   },
